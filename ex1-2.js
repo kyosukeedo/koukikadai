@@ -3,7 +3,7 @@ const rouletteItems = document.getElementById('roulette-items');
 let isSpinning = false;
 let spinDuration;
 
-startButton.addEventListener('click', () => {
+startButton.addEventListener('click', () =< {
   if (isSpinning) return;
 
   isSpinning = true;
