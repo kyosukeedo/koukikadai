@@ -3,7 +3,7 @@ const rouletteItems = document.getElementById('roulette-items');
 let isSpinning = false;
 let spinDuration;
 
-startButton.addEventListener('click',()=>{
+startButton.addEventListener('click', () => {
   if (isSpinning) return;
 
   isSpinning = true;
@@ -12,7 +12,7 @@ startButton.addEventListener('click',()=>{
   rouletteItems.style.transition = 'top ${spinDuration}ms cubic-bezier(.1, .1, .1, 1)';
   rouletteItems.style.top = '-${rouletteItems.offsetHeight}px';
 
-  setTimeout(() =>{
+  setTimeout(() => {
     isSpinning = false;
     rouletteItems.style.transition ='';
     rouletteItems.style.top ='0px';
