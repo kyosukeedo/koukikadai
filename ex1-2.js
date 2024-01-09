@@ -7,7 +7,7 @@ startButton.addEventListener('click', () => {
   if (isSpinning) return;
 
   isSpinning = true;
-  spinDuration = Math.random() *3000 + 3000;
+  spinDuration = Math.random() * 3000 + 3000;
 
   rouletteItems.style.transition = 'top ${spinDuration}ms cubic-bezier(.1, .1, .1, 1)';
   rouletteItems.style.top = '-${rouletteItems.offsetHeight}px';
